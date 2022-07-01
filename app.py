@@ -10,6 +10,8 @@ def fibonacci(number):
     count = 0
     result = 0
 
+    number += 1
+
     if number <= 0:
         f"{number} is invalid. Please enter a positive integer"
     elif number == 1:
@@ -24,7 +26,17 @@ def fibonacci(number):
     return result
 
 def main():
-    print("s")
+    number_of_terms = int(input("Number of terms: "))
+    sum = 0
+
+    for i in range(number_of_terms):
+        term = fibonacci(i)
+        if term <= 4_000_000:
+            sum += term
+        if term > 4_000_000:
+            break
+
+    print(f"Sum: {sum}")
 
 if __name__ == "__main__":
     main()
