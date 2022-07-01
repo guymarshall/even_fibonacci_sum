@@ -9,7 +9,7 @@ def fibonacci(number):
     result = 0
 
     if number <= 0:
-        f"{number} is invalid. Please enter a positive integer"
+        print(f"{number} is invalid. Please enter a positive integer")
     elif number == 1:
         result = 0
     else:
