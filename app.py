@@ -4,8 +4,27 @@
 
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
+def fibonacci(number - 1):
+    first = 0
+    second = 1
+    count = 0
+    result = 0
+
+    if number <= 0:
+        f"{number} is invalid. Please enter a positive integer"
+    elif number == 1:
+        result = 0
+    else:
+        while count < number:
+            result = first + second
+            first = second
+            second = result
+            count += 1
+
+    return result
+
 def main():
-    print("running")
+    print("s")
 
 if __name__ == "__main__":
     main()
